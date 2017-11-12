@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0" />
+<title>Untitled Document</title>
+<link href="css/ohover.css" type="text/css"  rel="stylesheet" />
+<link href="css/style.css" type="text/css"  rel="stylesheet" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+#map_container{ 
+  width: 100%;
+  height: 138px;
+ 
+}
+#map_canvas{
+  width: 99.3%;
+  height: 138px;
+ 
+  border: 1px solid darkgrey;
+}
+.nodisplay{
+display:none;
+}
+.nodisplay1{
+display:none;
+}
+.display{
+}
+
+</style>
+ <script src="js/jquery.min.js"></script>
+ <script type="text/javascript" src="js/jquery.color.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+// script for dropping subjects show less and more
+       $(document).ready(function(){
+    $("#more_sg").click(function(){
+        $("#more_sg").addClass("nodisplay");
+		 $("#less_sg").removeClass("nodisplay");
+    });
+	 $("#less_sg").click(function(){
+        $("#less_sg").addClass("nodisplay");
+		 $("#more_sg").removeClass("nodisplay");
+		 
+    });
+   
+   
+});
+		 //functions dropping and hiding div   
+ function droptimingsdiv() {
+       $("#drop_div_sg").hide('5000');
+	   $("#hide_current_div").removeClass("nodisplay1");
+	   $("#hide_current_div").show('5000');    
+      }
+function hidetimingsdiv(){
+	$("#hide_current_div").hide('5000');
+	$("#drop_div_sg").show('5000');
+}
+
+
+
+</script>
+
+   
+
+</head>
+
+<body>
+<div class="main_sg"><!--- Main Starts Here---->
+
+	<div class="container_sg"><!--- Container Starts Here---->
+    
+    
+    
+    <!---Header Part Starting--->
+    	<div class="header_sg"><!--- Header Starts Here---->
+       		<div class="logo_sg"><img src="img/logo.png" alt="Instigully" class="img-responsive img_sg" /></div>
+            <!--<div class="login_sg"></div>-->
+        </div><!--- /Header Ends Here---->
+        
+        
+        
+        
+        <!---Navigation and Cover Part Starting--->
+        <div class="cover_main_sg"><!--- Cover Main Container Starts Here---->
+        	<div class="cover_pic_sg"><!--- Cover Pic Container Starts Here---->
+            	<div class="pic_sg"><img src="img/bg.jpg" alt="cover pic" class="responsive_cover_sg"/></div><!--Background Cover Image z axis 1--->
+                <div class="filter_black_sg"></div><!--Background Filter z axis 2--->
+            	<div class="search_header_sg"><!--- Search Container Starts Here---->
+                	<div class="container-4">
+  						<div class="styled-select">
+   							<select>
+      						<option>Rohini</option>
+     					    <option>Pitampura</option>
+   							</select>
+						</div>
+  						<input type="search" id="search" placeholder="Search..." />
+ 						<button class="icon"><i class="fa fa-search"></i></button>
+ 					 </div>
+
+        		</div><!--- /Search Container Ends Here---->
+                
+            	<div class="navigation_tab_sg"><!--- Navigation Tabs Container Starts Here---->
+                <font color="#9a9a9a">Home > Rohini > Institute Name</font>
+                </div><!--- /Navigation Tabs Container Ends Here---->
+                <div class="on_of_status_sg">Closed</div><!---Status Closed or Opened Div---->
+            	<div class="name_institute_sg">Institute Name</div><!----Name of Institute---->
+                <div class="average_rating_sg">3.7</div><!--Rating review---->
+        		
+           </div><!---/Cover Pic Container Ends Here---->
+        </div><!---/Cover Main Container Ends Here---->
+        
+      
+      
+      
+      
+      
+      
+      <!---Name of Owner Part Starting--->
+      <div class="owner_container_sg"><!--owner container  starts here--->
+      	<div class="owner_main_sg"><!--owner main  starts here--->
+        
+        	<div class="owner_pic_sg"><!--owner pic  starts here--->
+            	<div class="item-hover colored circle effect13 from_left_and_right"><a href="#">
+                      <div class="img"><img src="img/f7.png" alt="img"></div>
+                      <div class="info">
+                        <div class="info-back">
+                          <h3>Owner Name</h3>
+                          <p>Description goes here</p>
+                        </div>
+                      </div></a>
+                 </div> 
+            </div><!--/owner pic  ends here--->
+            
+            
+            
+             <div class="owner_name_des_sg"><!--owner name starts here--->
+             		
+                    <div class="owner_name_sg">
+                     	<div class="owner_name_align_sg">Owner Name</div>
+                    </div>
+                    
+                    <div class="owner_des_sg">
+                    	<div class="owner_des_align_sg"><font color="#999999" size="+1">AVERAGE COST:</font>&nbsp;<font  size="+1">Rs. 500(approx)</font>&nbsp;| <font color="#999999" size="+1">SUBJECT:</font>&nbsp;<font  size="+1">Maths,English,Computer Science</font>
+                        </div>
+                    </div>
+            
+            
+            </div><!--/owner name  ends here--->
+           
+        </div><!--/owner main  ends here--->
+      </div><!--/owner container  ends here--->
+      
+      
+      
+      
+     <!--Body Part Starting-->  
+        <div class="body_sg"><!--Main Body Container---->
+
+            <div class="control_main_sg"><!--Body Control Main Section Divide Container---->
+           		<!--Section Division Starts--->
+                
+                <br />
+                <div class="body_section_sg1"><!--Section1 Starts Here--->
+                	
+                    <div class="phone_sg"><!--Phone Main Div Starts--->
+                    
+                    	<div class="phone_align_sg">
+                        	<b style="font-size:15px;">PHONE NUMBER</b><br />
+                            <b class="no_sg">011 33106470</b><br />
+                            <font style="color:#999999;font-size:17px;">24/7 available</font><br />
+                        </div>
+                    	
+                    </div><!---Phone Main Div Ends Here--->
+                    
+                    
+                    <div class="location_sg">
+                    	<div class="location_align_sg">
+                    		<b style="font-size:15px;">LOCATION</b><br />
+                            <b style="font-size:14px;color:#cb202d;">Rajouri Garden ›</b><font style="font-size:14px;"> J 13/12, Patel Market, Opposite IDBI Bank Behind the Skating Rink Park, Rajouri Garden, New Delhi 110027</font>
+                    	</div>
+                        <div class="location_map_sg">
+                        	<div id="map_container">
+  							<div id="map_canvas"></div>
+							</div>
+						</div>
+                    </div>
+                    
+                    <div class="subject_sg">
+                    	<div class="subject_align_sg">
+                    		<b style="font-size:15px;">SUBJECTS</b><br />
+              
+                    	 </div>
+                     
+                          <div class="subject_preview_sg">
+                           <font color="#4E8225"><i class="fa fa-book"></i>&nbsp;</font>Maths
+                            </div>
+                            <div class="subject_preview_sg">
+                            <font color="#4E8225"><i class="fa fa-book"></i>&nbsp;</font>English
+                            </div>
+                            <div class="subject_preview_sg">
+                            <font color="#4E8225"><i class="fa fa-book"></i>&nbsp;</font>Hindi
+                            </div>
+                            <div class="subject_preview_sg">
+                            <font color="#4E8225"><i class="fa fa-book"></i>&nbsp;</font>Computer Science
+                            </div>
+                            <div class="subject_preview_sg">
+                           <font color="#4E8225"><i class="fa fa-book"></i>&nbsp;</font>Social Science
+                            </div>
+                    </div>
+                   
+                    <div class="timings_sg"> 
+                     <br /><!--Gap above timing-->
+                    	<div class="timings_align_sg">
+                    		<b style="font-size:15px;">TIMINGS</b>&nbsp;
+                            <a  href="javascript:void(0)" onclick="droptimingsdiv();" style="font-size:12px;font-weight:bold;color:#cb202d;text-decoration:none;"  id="less_sg">					 								(See Less +)
+                            </a>
+                            <a  href="javascript:void(0)" onclick="hidetimingsdiv();" style="font-size:12px;font-weight:bold;color:#cb202d;text-decoration:none;" class="nodisplay"  id="more_sg">					 								(See More +)
+                            </a>
+                            
+                           <br />
+                    	 </div>
+                         <div class="timings_today_sg" id="hide_current_div" style="display:none;">
+                         <div class="timings_day_sg">Today</div> <div class="timings_time_sg"><b>12 Noon to 12 Midnight</b></div>
+                         <script>
+
+//Print Days and compare using PHP FROM Database
+/*var days = [
+    'Sun',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat'
+];
+
+d = new Date();
+x = d.getDay();
+document.write(days[x]);
+//alert (days[x]);
+$(#days[x]).css({ 'font-weight': 'bold' });*/
+</script>
+                         </div>
+                        <div class="timings_drop_sg" id="drop_div_sg">
+                        
+                         <div class="timings_time_day_sg" id="Mon">
+                         	<div class="timings_day_sg">Mon</div>
+                            <div class="timings_time_sg">12 Noon to 12 Midnight</div>
+                         </div>
+                         
+                         <div class="timings_time_day_sg" id="Tue">
+                         	<div class="timings_day_sg">Tue</div>
+                         	<div class="timings_time_sg">12 Noon to 12 Midnight</div>
+                         </div>
+                         
+                         
+                         
+                         <div class="timings_time_day_sg" id="Wed">
+                         	<div class="timings_day_sg"><b>Wed</b></div>
+                            <div class="timings_time_sg"><b>12 Noon to 12 Midnight</b></div>
+                         </div>
+                         
+                         <div class="timings_time_day_sg" id="Thu">
+                         	<div class="timings_day_sg">Thu</div>
+                            <div class="timings_time_sg">12 Noon to 12 Midnight</div>
+                         </div>
+                         
+                         <div class="timings_time_day_sg" id="Fri">
+                         	<div class="timings_day_sg">Fri</div>
+                            <div class="timings_time_sg">12 Noon to 12 Midnight</div>
+                         </div>
+                         <div class="timings_time_day_sg" id="Sat">
+                         	<div class="timings_day_sg">Sat</div>
+                         	<div class="timings_time_sg">12 Noon to 12 Midnight</div>
+                         </div>
+                         <div class="timings_time_day_sg" id="Sun">
+                         	<div class="timings_day_sg">Sun</div>
+                            <div class="timings_time_sg"><font color="#E4191C"><b>Closed</b></font></div>
+                         </div>
+                         </div>
+                    
+                    </div>
+                
+                </div><!--/Section1 Ends Here--->
+                
+                
+                
+                <div class="body_section_sg2"><!--Section2 Starts Here--->
+                
+                   <div class="photos_sg">
+                   	<div class="photos_insti_align_sg">
+						 <b style="font-size:15px;">INSTITUTE AMBIENCE</b><br />                  
+                   	</div>
+                    <div class="photos_insti_div_sg">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <div class="photo_insti_more_sg">
+                    	<span style="position:relative;top:25px;left:25px;">+350</span>
+                    </div>
+                    </div>
+                    
+                  
+                    
+                    
+
+
+                  </div>
+                  
+                    <div class="review_box_sg">
+                    <br />
+                    <div class="photos_insti_align_sg">
+						 <b style="font-size:15px;">WRITE A REVIEW</b><br />                  
+                   	</div>
+                    <!---temp Review Box--->
+                    <!--<div class="review_box_temp_des_sg">
+                   	 <div class="review_temp_box_sg">
+                    
+                                Please write at least 140 characters about your personal experience at this institute. If the institute hosted you and is expecting this review, please mention so. 
+                            
+                    </div>
+                   </div>-->
+                   <!----Hidden Review Box Ask for Login---->
+                   <div class="hidden_review_box_temp_des_sg">
+                   	<div class="hidden_review_temp_box_sg">
+                    	<div class="your_rating_text_sg">YOUR RATING</div>
+                        <div class="main_color_sg">
+			  				<div class="float_left_col_sg">
+								
+                                <div id="rating">
+								<span><a href="#">1</a></span>
+								<span><a href="#">2</a></span>
+								<span><a href="#">3</a></span>
+								<span><a href="#">4</a></span>
+								<span><a href="#">5</a></span>
+							</div>
+        		  		 	</div>
+       			   			<div class="float_left_counter_sg">
+       							<div class="counter"></div>
+       			   			</div> 
+  						</div><!--Rating Counter and color ends-->
+                     <div class="empty_rate_line_sg">
+                     <!---Empty Spacing Div--->
+                     </div>
+                     <div class="empty_rate_line_1_sg">
+                     <!---Empty Spacing Div--->
+                     </div>
+                                          <textarea class="textarea_reviewbox_sg" placeholder="Tip: A great review covers institute, service, and ambiance. Got recommendations for your favorite teacher and institutes, or something everyone should try here? Include that too! And remember, your review needs to be at least 140 characters long :)"></textarea> 		<div class="empty_rate_line_1_sg">
+                     <!---Empty Spacing Div--->
+                     </div>
+                     <input class="add_friend_sg" placeholder="Who were you with? Use @ to tag friends...">
+                    
+                     <div class="empty_rate_line_2_sg">
+                     <!---Empty Spacing Div--->
+                     </div>
+                     <div align="right">
+                     <button class="publish_review_sg">PUBLISH REVIEW</button>
+                     </div>
+                    </div>
+                     
+                   </div>
+                   
+                    <!----/Hidden Review Box Ask for Login Ends---->
+                    
+                    <br /><br /><BR /><br /><Br /><br /><Br /><Br /><br /><Br />
+                    </div>
+                </div><!--/Section2 Ends Here--->
+                
+                
+                
+                <div class="body_section_sg3"><!--Section3 Starts Here--->
+                	<div class="nearby_sg">
+                  		 <div class="photos_insti_align_sg">
+						 <b style="font-size:15px;">NEARBY INSTITUTES</b><br />                  
+                   	</div>
+                   		 <div class="photos_insti_div_sg">
+                   			 <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                   			 <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    		 <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    		 <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    		 <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    		 <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                          </div>
+                    
+                   </div>
+                    <div class="google_ad_sg"><b style="font-size:15px;"></b><br /> <img src="img/ad3.jpg"  alt="Institute image">  </div>
+                    <div class="sponsors_sg"><!--<b style="font-size:15px;"></b><br /><img src="img/ad1.jpg"  alt="Institute image" height="300px" width="300px">--></div>
+                </div><!--/Section3 Ends Here--->
+                
+                
+                
+            </div><!--/Body Control Main Section Divide Container Ends---->
+        
+        </div><!--/Main Body Container Ends---->
+
+        
+        
+        
+        
+        
+        <!--Related Search--->
+        <div class="related_search_sg"><!--related search container  starts here--->
+        
+        <div class="related_main_sg"><!--related search main  starts here--->
+           <center class="photos_insti_align_sg"><b style="font-size:15px;align-content: center">RELATED SEARCHES</b></center>
+             <div class="photos_insti_div_sg">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb3.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb4.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb1.jpg" class="photos_insti_sg" alt="Institute image">
+                    <img src="img/thumb2.jpg" class="photos_insti_sg" alt="Institute image">
+                    <br /><br /><br /> 
+                    </div>
+                   &nbsp;
+        	</div><!--/related search main  ends here--->
+           
+        </div><!--/related search container  ends here--->
+        
+        
+      
+      
+      
+      
+      
+        <!--footer section here-->
+        <div class="footer_sg"><!---footer main container starts Here---->
+       <font color="#fffff"></font><br /><br /><br /><BR /><Br /><br /><br />
+       <div class="footer_copyright" style="color: #fff">&#9400; 2017 Created By <strong>Sagunesh Grover</strong></div>
+        </div><!---/footer main container ends Here---->
+    
+    
+    
+    
+    
+    
+    </div><!---/Container Ends Here---->
+
+
+</div><!---/Main Container Ends Here--->
+
+
+
+
+
+
+<!--Javascript and other jquery code---->
+
+  <script type="text/javascript"
+  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1Vq9bFNGlL1B8bYKLrgcY4dHxxiDSPzg&sensor=false&libraries=places">
+</script>
+<script>
+    var lat = 18.35827827454; //default latitude
+    var lng = 121.63744354248; //default longitude
+    var homeLatlng = new google.maps.LatLng(lat, lng); //set default coordinates
+    var homeMarker = new google.maps.Marker({ //set marker
+      position: homeLatlng, //set marker position equal to the default coordinates
+      map: map, //set map to be used by the marker
+      draggable: true //make the marker draggable
+    });
+    
+    
+    
+    var myOptions = {
+      center: new google.maps.LatLng(16.61096000671, 120.31346130371), //set map center
+      zoom: 17, //set zoom level to 17
+      mapTypeId: google.maps.MapTypeId.ROADMAP //set map type to road map
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions); //initialize the map
+
+    //if the position of the marker changes set latitude and longitude to 
+    //current position of the marker
+    google.maps.event.addListener(homeMarker, 'position_changed', function(){
+      var lat = homeMarker.getPosition().lat(); //set lat current latitude where the marker is plotted
+      var lng = homeMarker.getPosition().lng(); //set lat current longitude where the marker is plotted
+    });    
+    
+    //if the center of the map has changed
+    google.maps.event.addListener(map, 'center_changed', function(){
+      var lat = homeMarker.getPosition().lat(); //set lat to current latitude where the marker is plotted
+      var lng = homeMarker.getPosition().lng(); //set lng current latitude where the marker is plotted
+    });
+
+
+    var input = document.getElementById('search_new_places'); //get element to use as input for autocomplete
+    var autocomplete = new google.maps.places.Autocomplete(input); //set it as the input for autocomplete
+
+    autocomplete.bindTo('bounds', map); //bias the results to the maps viewport
+    
+    //executed when a place is selected from the search field
+    google.maps.event.addListener(autocomplete, 'place_changed', function(){
+        
+        //get information about the selected place in the autocomplete text field
+        var place = autocomplete.getPlace(); 
+        
+        if (place.geometry.viewport){ //for places within the default view port (continents, countries)
+          map.fitBounds(place.geometry.viewport); //set map center to the coordinates of the location
+        } else { //for places that are not on the default view port (cities, streets)
+          map.setCenter(place.geometry.location);  //set map center to the coordinates of the location
+          map.setZoom(17); //set a custom zoom level of 17
+        }
+
+        homeMarker.setMap(map); //set the map to be used by the  marker
+        homeMarker.setPosition(place.geometry.location); //plot marker into the coordinates of the location 
+  
+    });
+
+  $('#plot_marker').click(function(e){ //used for plotting the marker into the map if it doesn't exist already
+      e.preventDefault(); 
+      homeMarker.setMap(map); //set the map to be used by marker
+      homeMarker.setPosition(map.getCenter()); //set position of marker equal to the current center of the map
+      map.setZoom(17);
+      
+      $('input[type=text], input[type=hidden]').val('');
+  });
+
+  $('#search_ex_places').blur(function(){//once the user has selected an existing place
+      
+      var place = $(this).val();
+      //initialize values
+      var exists = 0;
+      var lat = 0; 
+      var lng = 0;
+      $('#saved_places option').each(function(index){ //loop through the save places
+        var cur_place = $(this).data('place'); //current place description
+        
+        //if current place in the loop is equal to the selected place
+        //then set the information to their respected fields
+        if(cur_place == place){ 
+          exists = 1;
+          $('#place_id').val($(this).data('id'));
+          lat = $(this).data('lat');
+          lng = $(this).data('lng');
+          $('#n_place').val($(this).data('place'));
+          $('#n_description').val($(this).data('description'));
+        }
+      });
+      
+      if(exists == 0){//if the place doesn't exist then empty all the text fields and hidden fields
+        $('input[type=text], input[type=hidden]').val('');
+        
+      }else{
+        //set the coordinates of the selected place
+        var position = new google.maps.LatLng(lat, lng);
+        
+        //set marker position
+        homeMarker.setMap(map);
+        homeMarker.setPosition(position);
+
+        //set the center of the map
+        map.setCenter(homeMarker.getPosition());
+        map.setZoom(17);
+        
+      }
+    });
+
+    $('#btn_save').click(function(){
+      var place   = $.trim($('#n_place').val());
+      var description = $.trim($('#n_description').val());
+      var lat = homeMarker.getPosition().lat();
+      var lng = homeMarker.getPosition().lng();
+      
+      $.post('save_place.php', {'place' : place, 'description' : description, 'lat' : lat, 'lng' : lng}, 
+        function(data){
+          var place_id = data;
+          var new_option = $('<option>').attr({'data-id' : place_id, 'data-place' : place, 'data-lat' : lat, 'data-lng' : lng, 'data-description' : description}).text(place);
+          new_option.appendTo($('#saved_places'));
+        }
+      );
+      
+      $('input[type=text], input[type=hidden]').val('');
+    });
+</script>
+
+
+
+<!--/Javascript and other jquery code Ends---->
+
+
+
+</body>
+</html>
